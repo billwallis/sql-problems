@@ -113,3 +113,39 @@ These questions are good for someone who's just starting out with SQL, but not f
 > The platform uses Trino only.
 >
 > The platform is still a WIP, so I'll save the pros and cons for later.
+
+---
+
+## SQL Short Reads
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://sqlshortreads.com/sql-practice-problems/
+>
+> These questions are created by [Chris Perry](https://www.linkedin.com/in/chrismperry/).
+>
+> The site only includes the questions (and solutions), but doesn't provide a live query editor -- instead, it points you to [https://livesql.oracle.com/](https://livesql.oracle.com/) which uses Oracle 19c.
+
+### Pros ✔️
+
+The site is pretty slick and easy to navigate, with plenty of problems to work on.
+
+I like that the intention is to provide the requirements like a "real-world" scenario rather than framed like a technical question.
+
+The author is clearly a fan of `DENSE_RANK` 😄
+
+The [member-type-upgrade.sql](src/sql-short-reads/member-type-upgrade.sql) question is a good one, I like when a question has a bit of Maths in it.
+
+### Cons ❌
+
+The [livesql.oracle.com](https://livesql.oracle.com/) site requires you to sign up to use it, which is a bit annoying -- in particular because it asks for more personal information than I'd like to give (phone number, company name, etc.).
+
+Also, Oracle 🤮
+
+To reiterate, Oracle 🤮
+
+The recommended solutions seem overcomplicated in a few cases and, like Analyst Builder, the "hard" questions are mostly not that hard.
+
+I disagree with the solution to [consecutive-top-product-category-performances.sql](src/sql-short-reads/consecutive-top-product-category-performances.sql).
