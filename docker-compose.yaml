@@ -1,33 +1,50 @@
 ---
+#profiles:
+#  skip: Skip the service
+#  build: Build the service
+
 services:
   analyst-builder:
     image: postgres:16.1
     container_name: AnalystBuilder
-    environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
     ports: ["5432:5432"]
+    profiles: ["skip"]
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
 
   data-lemur:
     image: postgres:14.11
     container_name: DataLemur
-    environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
     ports: ["5433:5432"]
+    profiles: ["skip"]
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+  leetcode:
+    image: mysql:8.0.36
+    container_name: LeetCode
+    ports: ["3306:3306"]
+    profiles: ["build"]
+    environment:
+      # username is `root`
+      MYSQL_ROOT_PASSWORD: mysql
 
   data-expert:
+    # username is `admin`, password is null
     image: trinodb/trino:443
     container_name: DataExpert
-    # username is `admin`, password is null
     ports: ["8080:8080"]
+    profiles: ["skip"]
 
   # Oracle is slow to start
   sql-short-reads:
     image: doctorkirk/oracle-19c:latest
     container_name: SQLShortReads
+    ports: ["1521:1521"]
+    profiles: ["skip"]
     environment:
       ORACLE_SID: DEFAULT
       # username is `SYSTEM`
       ORACLE_PWD: oracle
-    ports: ["1521:1521"]

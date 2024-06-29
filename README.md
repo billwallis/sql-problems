@@ -28,6 +28,30 @@ I've only bothered solving the hardest (free) problems, and I'll add some notes 
 > - "_Recommended solution_" means a solution provided by the platform itself.
 > - "_Community solution_" means a solution provided by the community.
 
+## Pre-requisites
+
+This project uses Poetry to manage the Python dependencies and Docker to spin up the databases.
+
+To install these, follow the instructions on their websites:
+
+- https://python-poetry.org/docs/#installation
+- https://www.python.org/downloads/
+- https://docs.docker.com/get-docker/
+
+## Quick start
+
+After installing the pre-requisites and cloning this repo, just run Docker's `compose` command.
+
+```bash
+poetry install --sync  # --with dev
+docker compose --profile build up --detach
+docker compose down --volumes  # When you're finished
+```
+
+This will take a little while to run since there's a fair bit of data to chunk through. To build all services, skip the `--profile build` flag; to customise which services to build, adjust the `docker-compose.yaml` file.
+
+You can connect to the databases using any of your favourite SQL clients.
+
 ---
 
 ## DataLemur
@@ -99,6 +123,20 @@ The "hard" problems are _waaay_ easier than the DataLemur ones; they're more lik
 Hopefully the "very hard" problems are actually hard, but I can't say for sure.
 
 These questions are good for someone who's just starting out with SQL, but not for someone who's been working with SQL for a while.
+
+---
+
+## LeetCode
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://leetcode.com/problemset/database/?difficulty=HARD
+>
+> The platform uses MySQL (8.0.36) only.
+>
+> There are only 3 free hard problems.
 
 ---
 
