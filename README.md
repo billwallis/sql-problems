@@ -134,9 +134,27 @@ These questions are good for someone who's just starting out with SQL, but not f
 >
 > - https://leetcode.com/problemset/database/?difficulty=HARD
 >
-> The platform uses MySQL (8.0.36) only.
+> The platform uses a mix of databases and even Pandas.
 >
 > There are only 3 free hard problems.
+
+### Pros ✔️
+
+It's LeetCode -- the platform is decent 😜
+
+Like the rest of LeetCode, the test cases are a decent feature: especially since your solution is run against multiple inputs and outputs, encouraging you to write a more general solution rather than one that just works for the given data.
+
+The questions have a walkthrough to help you understand the problem and the expected output.
+
+The community shares a good variety of answers.
+
+### Cons ❌
+
+If you know common query patterns, the "hard" questions are easy.
+
+Small gripe, but I'm never happy when SQL problems want column names to be case-sensitive or have spaces in them, like `Cancellation Rate` (rather than `cancellation_rate`).
+
+Same as DataLemur: these are good for checking that you know what you need to know for a mid-level engineer, but are not great preparation for a senior technical role.
 
 ---
 
