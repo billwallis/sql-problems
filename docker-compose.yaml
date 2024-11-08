@@ -1,7 +1,7 @@
 ---
-#profiles:
-#  skip: Skip the service
-#  build: Build the service
+# profiles:
+#   skip: Skip the service
+#   build: Build the service
 
 services:
   analyst-builder:
@@ -26,7 +26,7 @@ services:
     image: mysql:8.0.36
     container_name: LeetCode
     ports: ["3306:3306"]
-    profiles: ["build"]
+    profiles: ["skip"]
     environment:
       # username is `root`
       MYSQL_ROOT_PASSWORD: mysql

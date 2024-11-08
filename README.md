@@ -241,6 +241,22 @@ The problems are written in a PDF.
 
 ---
 
+## Advent of SQL
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://adventofsql.com/
+>
+> Although the questions are based on PostgreSQL, I'll solve them with DuckDB since there is significant overlap between the two (and I prefer DuckDB for stuff like this).
+
+### Pros ✔️
+
+### Cons ❌
+
+---
+
 ## Challenging SQL Problems
 
 > [!SUCCESS]
