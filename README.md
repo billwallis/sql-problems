@@ -205,3 +205,56 @@ To reiterate, Oracle 🤮
 The recommended solutions seem overcomplicated in a few cases and, like Analyst Builder, the "hard" questions are mostly not that hard.
 
 I disagree with the solution to [consecutive-top-product-category-performances.sql](src/sql-short-reads/consecutive-top-product-category-performances.sql).
+
+---
+
+## AdvancedSQLPuzzles
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://advancedsqlpuzzles.com/
+> - https://github.com/smpetersgithub/AdvancedSQLPuzzles/tree/main/Advanced%20SQL%20Puzzles
+>
+> The site is a [GitHub](https://github.com/) repo which only includes the questions (and solutions), but doesn't provide a live query editor.
+>
+> The problems are created by [Scott Peters](https://github.com/smpetersgithub).
+
+### Pros ✔️
+
+There are _loads_ of problems to work on, which is great!
+
+The problems aren't just about writing a `SELECT` statement, but also tests DDL and DML knowledge, as well as Maths/stats knowledge.
+
+There is a lot of repetition in the problems, which is good for reinforcing the patterns and techniques.
+
+Many of these questions _are_ hard, and are good preparation for a senior technical role.
+
+### Cons ❌
+
+The DDL is restricted to SQL Server, so it's not as general as the other platforms.
+
+There's a lot of overlap between the DDL and the solutions -- I guess this is for convenience, but it makes the solutions harder to read.
+
+The problems are written in a PDF.
+
+---
+
+## Challenging SQL Problems
+
+> [!SUCCESS]
+>
+> This is my own set of SQL problems 😄
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://bilbottom.github.io/sql-learning-materials/challenging-sql-problems/challenging-sql-problems/
+>
+> The site only includes the questions (and solutions), but doesn't provide a live query editor.
+>
+> The problems' DDL is written in generic SQL to support multiple databases.
+>
+> I'm not going to add a pros and cons list: I've just included this reference for completeness.
