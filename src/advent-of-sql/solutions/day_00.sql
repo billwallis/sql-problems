@@ -1,4 +1,3 @@
-
 use santa_workshop;
 
 /* Children */
