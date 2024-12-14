@@ -1,24 +1,25 @@
-create schema if not exists santa_workshop;
-use santa_workshop;
-
 /*
     https://adventofsql.com/challenges/4
     https://adventofsql.com/challenges/4/data
 */
+drop schema if exists day_04 cascade;
+create schema day_04;
+use day_04;
 
--- Create tables
-DROP TABLE IF EXISTS toy_production CASCADE;
 
-CREATE TABLE toy_production (
-  toy_id int PRIMARY KEY,
-  toy_name VARCHAR(100),
-  previous_tags TEXT[],
-  new_tags TEXT[]
+/* Create tables */
+create table day_04.toy_production (
+    toy_id int primary key,
+    toy_name varchar(100),
+    previous_tags text[],
+    new_tags text[]
 );
 
 
--- Sample data
-INSERT INTO toy_production VALUES
-(1, 'Robot', ARRAY['fun', 'battery'], ARRAY['smart', 'battery', 'educational', 'scientific']),
-(2, 'Doll', ARRAY['cute', 'classic'], ARRAY['cute', 'collectible', 'classic']),
-(3, 'Puzzle', ARRAY['brain', 'wood'], ARRAY['educational', 'wood', 'strategy']);
+/* Sample data */
+insert into day_04.toy_production
+values
+    (1, 'Robot', array['fun', 'battery'], array['smart', 'battery', 'educational', 'scientific']),
+    (2, 'Doll', array['cute', 'classic'], array['cute', 'collectible', 'classic']),
+    (3, 'Puzzle', array['brain', 'wood'], array['educational', 'wood', 'strategy'])
+;

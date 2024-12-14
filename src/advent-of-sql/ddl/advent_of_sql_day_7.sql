@@ -1,29 +1,30 @@
-create schema if not exists santa_workshop;
-use santa_workshop;
-
 /*
     https://adventofsql.com/challenges/7
     https://adventofsql.com/challenges/7/data
 */
+drop schema if exists day_07 cascade;
+create schema day_07;
+use day_07;
 
--- Create tables
-DROP TABLE IF EXISTS workshop_elves CASCADE;
 
-create or replace sequence workshop_elves__pk start 1;
-CREATE or replace TABLE workshop_elves (
-    elf_id int PRIMARY KEY default nextval('workshop_elves__pk'),
-    elf_name VARCHAR(100) NOT NULL,
-    primary_skill VARCHAR(50) NOT NULL,
-    years_experience INTEGER NOT NULL
+/* Create tables */
+create sequence day_07.workshop_elves__pk start 1;
+create table day_07.workshop_elves (
+    elf_id int primary key default nextval('day_07.workshop_elves__pk'),
+    elf_name varchar(100) not null,
+    primary_skill varchar(50) not null,
+    years_experience integer not null
 );
 
 
--- Sample data
-INSERT INTO workshop_elves (elf_name, primary_skill, years_experience) VALUES
+/* Sample data */
+insert into day_07.workshop_elves(elf_name, primary_skill, years_experience)
+values
     ('Tinker', 'Toy Making', 150),
     ('Sparkle', 'Gift Wrapping', 75),
     ('Twinkle', 'Toy Making', 90),
     ('Holly', 'Cookie Baking', 200),
     ('Jolly', 'Gift Wrapping', 85),
     ('Berry', 'Cookie Baking', 120),
-    ('Star', 'Toy Making', 95);
+    ('Star', 'Toy Making', 95)
+;

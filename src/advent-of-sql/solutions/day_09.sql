@@ -1,10 +1,11 @@
-use santa_workshop;
+use day_09;
 
 /* training_sessions */
-select * from training_sessions;
+from training_sessions;
 
 /* reindeers */
-select * from reindeers;
+from reindeers;
+
 
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------

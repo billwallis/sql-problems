@@ -1,7 +1,7 @@
-use santa_workshop;
+use day_03;
 
 /* christmas_menus */
-select * from christmas_menus;
+from christmas_menus;
 
 
 ------------------------------------------------------------------------

@@ -1,16 +1,16 @@
-use santa_workshop;
+use day_00;
 
 /* Children */
-select * from Children;
+from Children;
 
 /* ChristmasList */
-select * from ChristmasList;
+from ChristmasList;
 
 /* Gifts */
-select * from Gifts;
+from Gifts;
 
 /* Reindeer */
-select * from Reindeer;
+from Reindeer;
 
 
 ------------------------------------------------------------------------

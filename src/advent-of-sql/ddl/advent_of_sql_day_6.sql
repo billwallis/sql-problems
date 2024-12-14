@@ -1,43 +1,45 @@
-create schema if not exists santa_workshop;
-use santa_workshop;
-
 /*
     https://adventofsql.com/challenges/6
     https://adventofsql.com/challenges/6/data
 */
+drop schema if exists day_06 cascade;
+create schema day_06;
+use day_06;
 
--- Create tables
-DROP TABLE IF EXISTS santa_workshop.gifts CASCADE;
-DROP TABLE IF EXISTS santa_workshop.children CASCADE;
 
-create sequence children__pk start 1;
-CREATE TABLE santa_workshop.children (
-    child_id int PRIMARY KEY default nextval('children__pk'),
-    name VARCHAR(100),
-    age INTEGER,
-    city VARCHAR(100)
+/* Create tables */
+create sequence day_06.children__pk start 1;
+create table day_06.children (
+    child_id int primary key default nextval('day_06.children__pk'),
+    name varchar(100),
+    age integer,
+    city varchar(100)
 );
 
-create sequence gifts__pk start 1;
-CREATE TABLE santa_workshop.gifts (
-    gift_id int PRIMARY KEY default nextval('gifts__pk'),
-    name VARCHAR(100),
-    price DECIMAL(10,2),
-    child_id INTEGER REFERENCES santa_workshop.children(child_id)
+create sequence day_06.gifts__pk start 1;
+create table day_06.gifts (
+    gift_id int primary key default nextval('day_06.gifts__pk'),
+    name varchar(100),
+    price decimal(10,2),
+    child_id integer references day_06.children(child_id)
 );
 
 
--- Sample data
-INSERT INTO children (name, age, city) VALUES
+/* Sample data */
+insert into day_06.children(name, age, city)
+values
     ('Tommy', 8, 'London'),
     ('Sarah', 7, 'London'),
     ('James', 9, 'Paris'),
     ('Maria', 6, 'Madrid'),
-    ('Lucas', 10, 'Berlin');
+    ('Lucas', 10, 'Berlin')
+;
 
-INSERT INTO gifts (name, price, child_id) VALUES
+insert into day_06.gifts(name, price, child_id)
+values
     ('Robot Dog', 45.99, 1),
     ('Paint Set', 15.50, 2),
     ('Gaming Console', 299.99, 3),
     ('Book Collection', 25.99, 4),
-    ('Chemistry Set', 109.99, 5);
+    ('Chemistry Set', 109.99, 5)
+;

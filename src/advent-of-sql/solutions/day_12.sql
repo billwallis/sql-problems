@@ -1,10 +1,11 @@
-use santa_workshop;
+use day_12;
 
 /* gifts */
-select * from gifts;
+from gifts;
 
 /* gift_requests */
-select * from gift_requests;
+from gift_requests;
+
 
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------

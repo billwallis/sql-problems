@@ -1,22 +1,23 @@
-create schema if not exists santa_workshop;
-use santa_workshop;
-
 /*
     https://adventofsql.com/challenges/8
     https://adventofsql.com/challenges/8/data
 */
+drop schema if exists day_08 cascade;
+create schema day_08;
+use day_08;
 
--- Create tables
-DROP TABLE IF EXISTS staff CASCADE;
-CREATE TABLE staff (
-    staff_id int PRIMARY KEY,
-    staff_name VARCHAR(100) NOT NULL,
-    manager_id INTEGER
+
+/* Create tables */
+create table day_08.staff (
+    staff_id int primary key,
+    staff_name varchar(100) not null,
+    manager_id integer
 );
 
 
--- Sample data
-INSERT INTO staff (staff_id, staff_name, manager_id) VALUES
+/* Sample data */
+insert into day_08.staff
+values
     (1, 'Santa Claus', NULL),                -- CEO level
     (2, 'Head Elf Operations', 1),           -- Department Head
     (3, 'Head Elf Logistics', 1),            -- Department Head
@@ -26,4 +27,5 @@ INSERT INTO staff (staff_id, staff_name, manager_id) VALUES
     (7, 'Junior Toy Maker', 4),              -- Staff
     (8, 'Junior Gift Wrapper', 5),           -- Staff
     (9, 'Inventory Clerk', 6),               -- Staff
-    (10, 'Apprentice Toy Maker', 7);         -- Entry Level
+    (10, 'Apprentice Toy Maker', 7)          -- Entry Level
+;

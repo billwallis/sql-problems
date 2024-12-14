@@ -1,7 +1,7 @@
-use santa_workshop;
+use day_04;
 
 /* toy_production */
-select * from toy_production;
+from toy_production;
 
 
 ------------------------------------------------------------------------

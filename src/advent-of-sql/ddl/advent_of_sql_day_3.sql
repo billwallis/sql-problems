@@ -1,22 +1,22 @@
-create schema if not exists santa_workshop;
-use santa_workshop;
-
 /*
     https://adventofsql.com/challenges/3
     https://adventofsql.com/challenges/3/data
 */
+drop schema if exists day_03 cascade;
+create schema day_03;
+use day_03;
 
--- Create tables
-DROP TABLE IF EXISTS christmas_menus CASCADE;
 
-CREATE TABLE christmas_menus (
-  id int PRIMARY KEY,
-  menu_data varchar  /* XML */
+/* Create tables */
+create table day_03.christmas_menus (
+    id int primary key,
+    menu_data varchar  /* XML */
 );
 
 
--- Sample data
-INSERT INTO christmas_menus (id, menu_data) VALUES
+/* Sample data */
+insert into day_03.christmas_menus
+values
 (1, '<menu version="1.0">
     <dishes>
         <dish>
@@ -27,8 +27,7 @@ INSERT INTO christmas_menus (id, menu_data) VALUES
         </dish>
     </dishes>
     <total_count>80</total_count>
-</menu>');
-INSERT INTO christmas_menus (id, menu_data) VALUES
+</menu>'),
 (2, '<menu version="2.0">
     <total_guests>85</total_guests>
     <dishes>
@@ -39,8 +38,7 @@ INSERT INTO christmas_menus (id, menu_data) VALUES
             <food_item_id>102</food_item_id>
         </dish_entry>
     </dishes>
-</menu>');
-INSERT INTO christmas_menus (id, menu_data) VALUES
+</menu>'),
 (3, '<menu version="beta">
   <guestCount>15</guestCount>
   <foodList>
@@ -48,4 +46,5 @@ INSERT INTO christmas_menus (id, menu_data) VALUES
           <food_item_id>102</food_item_id>
       </foodEntry>
   </foodList>
-</menu>');
+</menu>')
+;

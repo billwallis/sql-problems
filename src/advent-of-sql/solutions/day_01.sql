@@ -1,13 +1,13 @@
-use santa_workshop;
+use day_01;
 
 /* children */
-select * from children;
+from children;
 
 /* wish_lists */
-select * from wish_lists;
+from wish_lists;
 
 /* toy_catalogue */
-select * from toy_catalogue;
+from toy_catalogue;
 
 
 ------------------------------------------------------------------------

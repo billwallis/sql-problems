@@ -1,10 +1,10 @@
-use santa_workshop;
+use day_02;
 
 /* letters_a */
-select * from letters_a;
+from letters_a;
 
 /* letters_b */
-select * from letters_b;
+from letters_b;
 
 
 ------------------------------------------------------------------------

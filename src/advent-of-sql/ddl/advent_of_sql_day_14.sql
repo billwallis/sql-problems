@@ -1,22 +1,23 @@
-create schema if not exists santa_workshop;
-use santa_workshop;
-
 /*
     https://adventofsql.com/challenges/14
     https://adventofsql.com/challenges/14/data
 */
+drop schema if exists day_14 cascade;
+create schema day_14;
+use day_14;
 
--- Create tables
-DROP TABLE IF EXISTS SantaRecords;
-CREATE TABLE SantaRecords (
-    record_id INT PRIMARY KEY,
-    record_date DATE,
-    cleaning_receipts JSON
+
+/* Create tables */
+create table day_14.SantaRecords (
+    record_id int primary key,
+    record_date date,
+    cleaning_receipts json
 );
 
 
--- Sample data
-INSERT INTO SantaRecords (record_id, record_date, cleaning_receipts) VALUES
+/* Sample data */
+insert into day_14.SantaRecords
+values
 (1, '2024-11-25', '[
     {
         "receipt_id": "R120",
@@ -34,9 +35,7 @@ INSERT INTO SantaRecords (record_id, record_date, cleaning_receipts) VALUES
         "drop_off": "2024-11-25",
         "pickup": "2024-11-27"
     }
-]');
-
-INSERT INTO SantaRecords (record_id, record_date, cleaning_receipts) VALUES
+]'),
 (2, '2024-12-01', '[
     {
         "receipt_id": "R122",
@@ -54,10 +53,7 @@ INSERT INTO SantaRecords (record_id, record_date, cleaning_receipts) VALUES
         "drop_off": "2024-12-01",
         "pickup": "2024-12-03"
     }
-]');
-
--- Here's the record with the green suit
-INSERT INTO SantaRecords (record_id, record_date, cleaning_receipts) VALUES
+]'),
 (3, '2024-12-10', '[
     {
         "receipt_id": "R124",
@@ -75,4 +71,5 @@ INSERT INTO SantaRecords (record_id, record_date, cleaning_receipts) VALUES
         "drop_off": "2024-12-10",
         "pickup": "2024-12-12"
     }
-]');
+]')
+;
