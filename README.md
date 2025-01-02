@@ -43,7 +43,7 @@ To install these, follow the instructions on their websites:
 After installing the pre-requisites and cloning this repo, just run Docker's `compose` command.
 
 ```bash
-poetry install --sync  # --with dev
+poetry install --sync
 docker compose --profile build up --detach
 docker compose down --volumes  # When you're finished
 ```
@@ -253,13 +253,27 @@ The problems are written in a PDF.
 
 ### Pros ✔️
 
+For the most part, they're phrased like "real life" problems.
+
+Each problem had a sample to practise with.
+
+The author was very receptive to feedback on the [corresponding sub-Reddit community](https://www.reddit.com/r/adventofsql/).
+
+There was a good variety of topics and data types (JSON, geometry, etc).
+
 ### Cons ❌
+
+The difficulty varies _wildly_, and some of the challenges were way too easy.
+
+Since it was the first year, there were a fair few bugs (as expected) and the samples didn't always correctly reflect the "real" data.
+
+Would have been awesome to have a leaderboard 😛
 
 ---
 
 ## Challenging SQL Problems
 
-> [!SUCCESS]
+> [!TIP]
 >
 > This is my own set of SQL problems 😄
 
@@ -273,4 +287,4 @@ The problems are written in a PDF.
 >
 > The problems' DDL is written in generic SQL to support multiple databases.
 >
-> I'm not going to add a pros and cons list: I've just included this reference for completeness.
+> I'm not going to add a pros and cons list: I've just included this for completeness.

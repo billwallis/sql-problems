@@ -15,7 +15,7 @@ package-mode = false
 python = "^3.11"
 
 [tool.poetry.group]
-dev.optional = true
+dev.optional = false
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.6.2"
