@@ -43,7 +43,7 @@ To install these, follow the instructions on their websites:
 After installing the pre-requisites and cloning this repo, just run Docker's `compose` command.
 
 ```bash
-poetry install --sync
+poetry install
 docker compose --profile build up --detach
 docker compose down --volumes  # When you're finished
 ```
