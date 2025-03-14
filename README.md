@@ -1,7 +1,7 @@
 <div align="center">
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
-[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Bilbottom/sql-problems)](https://shields.io/badges/git-hub-last-commit)
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -30,11 +30,11 @@ I've only bothered solving the hardest (free) problems, and I'll add some notes 
 
 ## Pre-requisites
 
-This project uses Poetry to manage the Python dependencies and Docker to spin up the databases.
+This project uses [UV](https://docs.astral.sh/uv/) to manage the Python dependencies and [Docker](https://www.docker.com/) to spin up the databases.
 
 To install these, follow the instructions on their websites:
 
-- https://python-poetry.org/docs/#installation
+- https://docs.astral.sh/uv/getting-started/installation/
 - https://www.python.org/downloads/
 - https://docs.docker.com/get-docker/
 
@@ -43,7 +43,7 @@ To install these, follow the instructions on their websites:
 After installing the pre-requisites and cloning this repo, just run Docker's `compose` command.
 
 ```bash
-poetry install
+uv sync --all-groups
 docker compose --profile build up --detach
 docker compose down --volumes  # When you're finished
 ```
@@ -54,43 +54,7 @@ You can connect to the databases using any of your favourite SQL clients.
 
 ---
 
-## DataLemur
-
-> [!NOTE]
->
-> The problems are available at:
->
-> - https://datalemur.com/
->
-> The platform uses PostgreSQL only (version 14.11 at the time of writing).
->
-> There are only 8 free hard problems.
-
-### Pros ✔️
-
-The problems do get you to think and use some not-so-common logic, which is good!
-
-The problem statements have sample data and expected results, which is great for testing your solutions -- feels a lot like LeetCode/TDD 😉
-
-The platform is easy to use, has a fast response time, and the discussion tab has some good alternative community solutions.
-
-The solutions tab sometimes provides alternative approaches too -- one even showed off a recursive CTE!
-
-### Cons ❌
-
-Some of the recommended solutions could be better:
-
-- There are some database features that the solutions could use to make the queries more concise and readable.
-- The recommended solution for the [updated-status](src/data-lemur/updated-status.sql) problem wraps all the business logic into a case statement. This is bad practice given that the solution could have used a lookup table<sup>\*</sup>, which is what SQL is all about!
-- I frankly disagree with the approach for one solution ([median-search-freq](src/data-lemur/median-search-freq.sql)).
-
-<sup>\*</sup>The DataLemur platform wasn't accepting several variant of the `VALUES` clause even though it was valid SQL. This feels like a bug in the platform.
-
-I'm not sure about the premium hard questions, but based on the free ones, the problems are only moderately difficult -- I have to solve harder problems on a daily basis as an analytics engineer, so I don't think these are great preparation for a senior technical role.
-
----
-
-## Analyst Builder
+## Analyst Builder [![](https://img.shields.io/badge/difficulty-easy-green.svg)](https://www.analystbuilder.com/)
 
 > [!NOTE]
 >
@@ -126,53 +90,7 @@ These questions are good for someone who's just starting out with SQL, but not f
 
 ---
 
-## LeetCode
-
-> [!NOTE]
->
-> The problems are available at:
->
-> - https://leetcode.com/problemset/database/?difficulty=HARD
->
-> The platform uses a mix of databases and even Pandas.
->
-> There are only 3 free hard problems.
-
-### Pros ✔️
-
-It's LeetCode -- the platform is decent 😜
-
-Like the rest of LeetCode, the test cases are a decent feature: especially since your solution is run against multiple inputs and outputs, encouraging you to write a more general solution rather than one that just works for the given data.
-
-The questions have a walkthrough to help you understand the problem and the expected output.
-
-The community shares a good variety of answers.
-
-### Cons ❌
-
-If you know common query patterns, the "hard" questions are easy.
-
-Small gripe, but I'm never happy when SQL problems want column names to be case-sensitive or have spaces in them, like `Cancellation Rate` (rather than `cancellation_rate`).
-
-Same as DataLemur: these are good for checking that you know what you need to know for a mid-level engineer, but are not great preparation for a senior technical role.
-
----
-
-## DataExpert.io
-
-> [!NOTE]
->
-> The problems are available at:
->
-> - https://dataexpert.io/questions
->
-> The platform uses Trino only.
->
-> The platform is still a WIP, so I'll save the pros and cons for later.
-
----
-
-## SQL Short Reads
+## SQL Short Reads [![](https://img.shields.io/badge/difficulty-easy-green.svg)](https://sqlshortreads.com/sql-practice-problems/)
 
 > [!NOTE]
 >
@@ -208,7 +126,119 @@ I disagree with the solution to [consecutive-top-product-category-performances.s
 
 ---
 
-## AdvancedSQLPuzzles
+## DataLemur [![](https://img.shields.io/badge/difficulty-medium-yellow.svg)](https://datalemur.com/)
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://datalemur.com/
+>
+> The platform uses PostgreSQL only (version 14.11 at the time of writing).
+>
+> There are only 8 free hard problems.
+
+### Pros ✔️
+
+The problems do get you to think and use some not-so-common logic, which is good!
+
+The problem statements have sample data and expected results, which is great for testing your solutions -- feels a lot like LeetCode/TDD 😉
+
+The platform is easy to use, has a fast response time, and the discussion tab has some good alternative community solutions.
+
+The solutions tab sometimes provides alternative approaches too -- one even showed off a recursive CTE!
+
+### Cons ❌
+
+Some of the recommended solutions could be better:
+
+- There are some database features that the solutions could use to make the queries more concise and readable.
+- The recommended solution for the [updated-status](src/data-lemur/updated-status.sql) problem wraps all the business logic into a case statement. This is bad practice given that the solution could have used a lookup table<sup>\*</sup>, which is what SQL is all about!
+- I frankly disagree with the approach for one solution ([median-search-freq](src/data-lemur/median-search-freq.sql)).
+
+<sup>\*</sup>The DataLemur platform wasn't accepting several variant of the `VALUES` clause even though it was valid SQL. This feels like a bug in the platform.
+
+I'm not sure about the premium hard questions, but based on the free ones, the problems are only moderately difficult -- I have to solve harder problems on a daily basis as an analytics engineer, so I don't think these are great preparation for a senior technical role.
+
+---
+
+## LeetCode [![](https://img.shields.io/badge/difficulty-medium-yellow.svg)](https://leetcode.com/problemset/database/)
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://leetcode.com/problemset/database/?difficulty=HARD
+>
+> The platform uses a mix of databases and even Pandas.
+>
+> There are only 3 free hard problems.
+
+### Pros ✔️
+
+It's LeetCode -- the platform is decent 😜
+
+Like the rest of LeetCode, the test cases are a decent feature: especially since your solution is run against multiple inputs and outputs, encouraging you to write a more general solution rather than one that just works for the given data.
+
+The questions have a walkthrough to help you understand the problem and the expected output.
+
+The community shares a good variety of answers.
+
+### Cons ❌
+
+If you know common query patterns, the "hard" questions are easy.
+
+Small gripe, but I'm never happy when SQL problems want column names to be case-sensitive or have spaces in them, like `Cancellation Rate` (rather than `cancellation_rate`).
+
+Same as DataLemur: these are good for checking that you know what you need to know for a mid-level engineer, but are not great preparation for a senior technical role.
+
+---
+
+## DataExpert.io [![](https://img.shields.io/badge/difficulty-medium-yellow.svg)](https://dataexpert.io/questions)
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://dataexpert.io/questions
+>
+> The platform uses Trino only.
+>
+> The platform is still a WIP, so I'll save the pros and cons for later.
+
+---
+
+## Advent of SQL [![](https://img.shields.io/badge/difficulty-medium-yellow.svg)](https://adventofsql.com/)
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://adventofsql.com/
+>
+> Although the questions are based on PostgreSQL, I'll solve them with DuckDB since there is significant overlap between the two (and I prefer DuckDB for stuff like this).
+
+### Pros ✔️
+
+For the most part, they're phrased like "real life" problems.
+
+Each problem had a sample to practise with.
+
+The author was very receptive to feedback on the [corresponding sub-Reddit community](https://www.reddit.com/r/adventofsql/).
+
+There was a good variety of topics and data types (JSON, geometry, etc).
+
+### Cons ❌
+
+The difficulty varies _wildly_, and some of the challenges were way too easy.
+
+Since it was the first year, there were a fair few bugs (as expected) and the samples didn't always correctly reflect the "real" data.
+
+Would have been awesome to have a leaderboard 😛
+
+---
+
+## AdvancedSQLPuzzles [![](https://img.shields.io/badge/difficulty-hard-red.svg)](https://advancedsqlpuzzles.com/)
 
 > [!NOTE]
 >
@@ -241,37 +271,7 @@ The problems are written in a PDF.
 
 ---
 
-## Advent of SQL
-
-> [!NOTE]
->
-> The problems are available at:
->
-> - https://adventofsql.com/
->
-> Although the questions are based on PostgreSQL, I'll solve them with DuckDB since there is significant overlap between the two (and I prefer DuckDB for stuff like this).
-
-### Pros ✔️
-
-For the most part, they're phrased like "real life" problems.
-
-Each problem had a sample to practise with.
-
-The author was very receptive to feedback on the [corresponding sub-Reddit community](https://www.reddit.com/r/adventofsql/).
-
-There was a good variety of topics and data types (JSON, geometry, etc).
-
-### Cons ❌
-
-The difficulty varies _wildly_, and some of the challenges were way too easy.
-
-Since it was the first year, there were a fair few bugs (as expected) and the samples didn't always correctly reflect the "real" data.
-
-Would have been awesome to have a leaderboard 😛
-
----
-
-## Challenging SQL Problems
+## Challenging SQL Problems [![](https://img.shields.io/badge/difficulty-hard-red.svg)](https://bilbottom.github.io/sql-learning-materials/challenging-sql-problems/challenging-sql-problems/)
 
 > [!TIP]
 >
