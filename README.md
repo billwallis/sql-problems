@@ -72,6 +72,7 @@ The platforms I've reviewed so far are listed below by their relative difficulty
 
 - [DataLemur](https://datalemur.com/) ([review](src/reviews.md#datalemur))
 - [LeetCode](https://leetcode.com/problemset/database/) ([review](src/reviews.md#leetcode))
+- [HackerRank](https://www.hackerrank.com/domains/sql) ([review](src/reviews.md#hackerrank))
 - [DataExpert.io](https://dataexpert.io/questions) ([review](src/reviews.md#dataexpertio))
 - [Advent of SQL](https://adventofsql.com/) ([review](src/reviews.md#advent-of-sql))
 

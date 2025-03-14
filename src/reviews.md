@@ -170,6 +170,38 @@ Same as DataLemur: these are good for checking that you know what you need to kn
 
 ---
 
+## HackerRank
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://www.hackerrank.com/domains/sql
+>
+> The platform uses a mix of databases and languages.
+
+### Pros ✔️
+
+The platform is easy to use and has a fast response time.
+
+The problem statements have sample data and expected results.
+
+There is a discussions tab to discuss solutions with other "hackers".
+
+There is a leaderboard and you can gain experience (nice gamification).
+
+I really like that you can see other people's submissions!
+
+### Cons ❌
+
+The only DB options are DB2, MySQL, Oracle, and SQL Server 😭
+
+There are only two "hard" SQL problem (using the "difficulty" filter, not the "skills" filter).
+
+There aren't enough hard questions, so someone prepping for a senior role will run out of questions very quickly.
+
+---
+
 ## DataExpert.io
 
 > [!NOTE]
