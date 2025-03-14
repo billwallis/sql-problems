@@ -60,7 +60,7 @@ I like that the intention is to provide the requirements like a "real-world" sce
 
 The author is clearly a fan of `DENSE_RANK` 😄
 
-The [member-type-upgrade.sql](/sql-short-reads/member-type-upgrade.sql) question is a good one, I like when a question has a bit of Maths in it.
+The [member-type-upgrade.sql](/src/sql-short-reads/member-type-upgrade.sql) question is a good one, I like when a question has a bit of Maths in it.
 
 ### Cons ❌
 
@@ -72,7 +72,7 @@ To reiterate, Oracle 🤮
 
 The recommended solutions seem overcomplicated in a few cases and, like Analyst Builder, the "hard" questions are mostly not that hard.
 
-I disagree with the solution to [consecutive-top-product-category-performances.sql](sql-short-reads/consecutive-top-product-category-performances.sql).
+I disagree with the solution to [consecutive-top-product-category-performances.sql](/src/sql-short-reads/consecutive-top-product-category-performances.sql).
 
 ---
 
@@ -129,8 +129,8 @@ The solutions tab sometimes provides alternative approaches too -- one even show
 Some of the recommended solutions could be better:
 
 - There are some database features that the solutions could use to make the queries more concise and readable.
-- The recommended solution for the [updated-status](data-lemur/updated-status.sql) problem wraps all the business logic into a case statement. This is bad practice given that the solution could have used a lookup table<sup>\*</sup>, which is what SQL is all about!
-- I frankly disagree with the approach for one solution ([median-search-freq](data-lemur/median-search-freq.sql)).
+- The recommended solution for the [updated-status](/src/data-lemur/updated-status.sql) problem wraps all the business logic into a case statement. This is bad practice given that the solution could have used a lookup table<sup>\*</sup>, which is what SQL is all about!
+- I frankly disagree with the approach for one solution ([median-search-freq](/src/data-lemur/median-search-freq.sql)).
 
 <sup>\*</sup>The DataLemur platform wasn't accepting several variant of the `VALUES` clause even though it was valid SQL. This feels like a bug in the platform.
 
