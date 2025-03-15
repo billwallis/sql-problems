@@ -14,6 +14,13 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
 
+  data-expert:
+    # username is `admin`, password is null
+    image: trinodb/trino:443
+    container_name: DataExpert
+    ports: ["8080:8080"]
+    profiles: ["skip"]
+
   data-lemur:
     image: postgres:14.11
     container_name: DataLemur
@@ -23,6 +30,17 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
 
+  hacker-rank:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: HackerRank
+    ports: ["1433:1433"]
+    profiles: ["skip"]
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      # username is `SA`
+      SA_PASSWORD: Test@123
+
   leetcode:
     image: mysql:8.0.36
     container_name: LeetCode
@@ -31,13 +49,6 @@ services:
     environment:
       # username is `root`
       MYSQL_ROOT_PASSWORD: mysql
-
-  data-expert:
-    # username is `admin`, password is null
-    image: trinodb/trino:443
-    container_name: DataExpert
-    ports: ["8080:8080"]
-    profiles: ["skip"]
 
   # Oracle is slow to start
   sql-short-reads:
