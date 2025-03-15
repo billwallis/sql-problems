@@ -50,6 +50,15 @@ services:
       # username is `root`
       MYSQL_ROOT_PASSWORD: mysql
 
+  strata-scratch:
+    image: postgres:16.7
+    container_name: StrataScratch
+    ports: ["5434:5432"]
+    profiles: ["skip"]
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
   # Oracle is slow to start
   sql-short-reads:
     image: doctorkirk/oracle-19c:latest
