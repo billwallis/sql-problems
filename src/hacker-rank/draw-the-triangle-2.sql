@@ -1,14 +1,17 @@
-/* https://www.hackerrank.com/challenges/draw-the-triangle-1/problem */
+/* https://www.hackerrank.com/challenges/draw-the-triangle-2/problem */
 
 /* Sample input: 5 */
 
 /* Sample output */
-values
-    ('*'),
-    ('* *'),
-    ('* * *'),
-    ('* * * *'),
-    ('* * * * *')
+select *
+from (
+    values
+        ('*'),
+        ('* *'),
+        ('* * *'),
+        ('* * * *'),
+        ('* * * * *')
+) as solution(_)
 ;
 
 

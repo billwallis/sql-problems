@@ -81,11 +81,13 @@ values
 
 
 /* Sample output */
-values
-    /* contest_id, hacker_id, name, total_submissions, total_accepted_submissions, total_views, total_unique_views */
-    (66406, 17973, 'Rose',   111, 39, 156, 56),
-    (66556, 79153, 'Angela',   0,  0,  11, 10),
-    (94828, 80275, 'Frank',  150, 38,  41, 15)
+select *
+from (
+    values
+        (66406, 17973, 'Rose',   111, 39, 156, 56),
+        (66556, 79153, 'Angela',   0,  0,  11, 10),
+        (94828, 80275, 'Frank',  150, 38,  41, 15)
+) as solution(contest_id, hacker_id, name, total_submissions, total_accepted_submissions, total_views, total_unique_views)
 ;
 
 

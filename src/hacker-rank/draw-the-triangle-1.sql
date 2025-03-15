@@ -3,12 +3,15 @@
 /* Sample input: 5 */
 
 /* Sample output */
-values
-    ('* * * * *'),
-    ('* * * *'),
-    ('* * *'),
-    ('* *'),
-    ('*')
+select *
+from (
+    values
+        ('* * * * *'),
+        ('* * * *'),
+        ('* * *'),
+        ('* *'),
+        ('*')
+) as solution(_)
 ;
 
 

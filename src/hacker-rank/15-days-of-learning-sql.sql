@@ -53,14 +53,16 @@ values
 
 
 /* Sample output */
-values
-    /* submission_date, unique_hackers, hacker_id, name */
-    ('2016-03-01', 4, 20703, 'Angela'),
-    ('2016-03-02', 2, 79722, 'Michael'),
-    ('2016-03-03', 2, 20703, 'Angela'),
-    ('2016-03-04', 2, 20703, 'Angela'),
-    ('2016-03-05', 1, 36396, 'Frank'),
-    ('2016-03-06', 1, 20703, 'Angela')
+select *
+from (
+    values
+        ('2016-03-01', 4, 20703, 'Angela'),
+        ('2016-03-02', 2, 79722, 'Michael'),
+        ('2016-03-03', 2, 20703, 'Angela'),
+        ('2016-03-04', 2, 20703, 'Angela'),
+        ('2016-03-05', 1, 36396, 'Frank'),
+        ('2016-03-06', 1, 20703, 'Angela')
+) as solution(submission_date, unique_hackers, hacker_id, name)
 ;
 
 

@@ -1,4 +1,4 @@
-/* https://www.hackerrank.com/challenges/draw-the-triangle-1/problem */
+/* https://www.hackerrank.com/challenges/print-prime-numbers/problem */
 
 /* Sample input: <=10 */
 

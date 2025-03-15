@@ -196,7 +196,7 @@ I really like that you can see other people's submissions!
 
 The only DB options are DB2, MySQL, Oracle, and SQL Server 😭
 
-There are only two "hard" SQL problem (using the "difficulty" filter, not the "skills" filter).
+There are only two "hard" SQL problems (using the "difficulty" filter, not the "skills" filter).
 
 There aren't enough hard questions, so someone prepping for a senior role will run out of questions very quickly.
 
