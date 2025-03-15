@@ -66,6 +66,7 @@ The platforms I've reviewed so far are listed below by their relative difficulty
 
 - [Analyst Builder](https://www.analystbuilder.com/) ([review](src/reviews.md#analyst-builder))
 - [SQL Short Reads](https://sqlshortreads.com/sql-practice-problems/) ([review](src/reviews.md#sql-short-reads))
+- [StrataScratch](https://platform.stratascratch.com/coding) ([review](src/reviews.md#stratascratch))
 - [SQL Murder Mystery](https://mystery.knightlab.com/) ([review](src/reviews.md#sql-murder-mystery))
 
 ### 🟠 Medium

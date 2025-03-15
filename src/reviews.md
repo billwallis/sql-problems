@@ -76,6 +76,34 @@ I disagree with the solution to [consecutive-top-product-category-performances.s
 
 ---
 
+## StrataScratch
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://platform.stratascratch.com/coding?difficulties=3&is_freemium=1
+>
+> The platform uses a mix of databases and languages, and has plenty of free "hard" problems.
+
+### Pros ✔️
+
+The platform feels _very_ similar to HackerRank, but with some areas that are better and others that are worse.
+
+The platform is easy to use, has a fast response time, and the "Solutions from Users" tab has some good community solutions.
+
+I really like that you can see other people's submissions!
+
+### Cons ❌
+
+There are no sample data and expected results.
+
+The "hard" questions are not that hard 😭
+
+These questions are good for someone who's just starting out with SQL, but not for someone who's been working with SQL for a while.
+
+---
+
 ## SQL Murder Mystery
 
 > [!NOTE]
@@ -184,7 +212,7 @@ Same as DataLemur: these are good for checking that you know what you need to kn
 
 The platform is easy to use and has a fast response time.
 
-The problem statements have sample data and expected results.
+The problem statements have sample data and expected results, and have a good walkthrough of how the numbers are derived for clarity on what the logic is.
 
 There is a discussions tab to discuss solutions with other "hackers".
 
