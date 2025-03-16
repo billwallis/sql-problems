@@ -50,10 +50,19 @@ services:
       # username is `root`
       MYSQL_ROOT_PASSWORD: mysql
 
+  namastesql:
+    image: postgres:14.7
+    container_name: NamasteSQL
+    ports: ["5434:5432"]
+    profiles: ["skip"]
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
   strata-scratch:
     image: postgres:16.7
     container_name: StrataScratch
-    ports: ["5434:5432"]
+    ports: ["5435:5432"]
     profiles: ["skip"]
     environment:
       POSTGRES_USER: postgres
