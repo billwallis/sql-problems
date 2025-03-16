@@ -6,7 +6,8 @@
 # Hidden files
 __*.*
 
-# DuckDB
+# SQLite and DuckDB
+*.sqlite
 *.duckdb
 *.duckdb.wal
 
