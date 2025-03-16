@@ -145,6 +145,89 @@ These questions are good for someone who's just starting out with SQL, but not f
 
 ---
 
+## Lost at SQL
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://lost-at-sql.therobinlord.com/
+>
+> The platform uses SQLite, and has 5 problems with a live SQL editor.
+>
+> It also has a "story mode", which I've not attempted.
+
+### Pros ✔️
+
+It has a cute name and is a nice idea.
+
+There are settings to configure the experience and a leaderboard.
+
+### Cons ❌
+
+I really want to like this site, but I **hate** it. A strong feeling, I know, but I think it's justified.
+
+I wish more effort went into the questions: of the 5 questions, I'm sure that only 2 of them have a valid solution that is accepted by the site.
+
+#### The GUI is too much
+
+It's clear that a lot of work has gone into the site, but it's still not a good site:
+
+- There are too many pages/button clicks between the landing page and the questions' SQL editor
+- Every single time I go on a question it prompts me to do the tutorial
+- The GUI is overcomplicated with some sections having nested scroll bars
+- The GUI spacing is very poor, making too much space for decorative elements of the site
+- Even in full-screen mode, I still feel like I don't have enough space -- especially for the result sets
+- The auto-complete is not good, and the SQL font isn't monospaced
+- I don't think syntax errors or how long it took to finish are good metrics to track for something that is meant to be a learning site
+
+Rather than working on background images, tile decals, pictures of fish/crew/puddings, and so on, I would have much rather the effort went into making the GUI more user-friendly.
+
+#### The questions have lots of issues
+
+The only question I didn't have an issue with was ["maintain" by Chris Green](/src/lost-at-sql/03-maintain-by-chris-green.sql), which was extremely easy.
+
+The other questions are reviewed below.
+
+[**"Case" by Jess Peck**](/src/lost-at-sql/01-case-by-jess-peck.sql)
+
+- The problem statement and solution do not align (full details in [the solution file](/src/lost-at-sql/01-case-by-jess-peck.sql)), making this a terrible question because there is no "correct" solution
+- The table columns are described in metric units (meters, kilograms) but the fish details are described in imperial units (inches, pounds), adding additional confusion
+  - Note that the reference to metric units seems to be an error, not a conversion to consider in the solution
+- Other than these issues, the question is good, albeit very simple
+
+[**"Identify" by David Westby**](/src/lost-at-sql/02-identify-by-david-westby.sql)
+
+- The question is fairly good and somewhat reflective of a "real life" problem
+
+Nitpicks:
+
+- The solution requires the "full name" column to be `Full_Name`, with the capital `F` and `N`. This is a poor design choice
+
+[**"Pudding" by Robin Lord**](/src/lost-at-sql/04-pudding-by-robin-lord.sql)
+
+- I solved this "by accident" with an incorrect solution (it had a logical error), but any solution I try that I think could be correct is not accepted
+- Good opportunity to use a recursive CTE and the `GROUP` window frame
+
+Nitpicks:
+
+- The site only checks the `offender_count` values, not the `snr_manager_id` values, so you could accidentally get a passing solution (like I did!)
+- The problem statement asks for the column `snr_manager_id` but the SQL snippet asks for `senior_manager_id`, which is inconsistent (the SQL snippet is incorrect)
+- Please don't use `timestamp` or `date` as object names 😔
+- The problem statement's definition of "pudding offender" is contradictory: "_people who most often took more than two puddings in a day where the second pudding was the last_". You can't "_[take] more than two puddings in a day_" where "_the second pudding was the last_" because if the second pudding was the last one, you can't take more than two!
+- The problem request also doesn't make much sense: why only care about the second pudding? Some people take up to 5 puddings in a single day!
+
+[**"Search" by Dom Woodman**](/src/lost-at-sql/05-search-by-dom-woodman.sql)
+
+- I'm very sure this question is broken: no matter what I do, I can't get an accepted solution -- and [neither can other people](https://stackoverflow.com/a/77434195/8213085), it seems
+
+Nitpicks:
+
+- The definition of "keyword" is not clear. Is it a unique `query` value, or the unique words _inside_ the `query` value (e.g. the `query` values split by spaces)?
+- The definitions of the difference are not clear. Do they need to be directional, or just absolute values?
+
+---
+
 ## SQL Murder Mystery
 
 > [!NOTE]
