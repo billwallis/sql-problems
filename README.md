@@ -21,13 +21,6 @@ I've only bothered solving the hardest (free) problems, and I'll add some notes 
 >
 > This repository will contain spoilers for the problems. If you want to solve them yourself, do not look at the solutions.
 
-> [!NOTE]
->
-> Some notes on terms/phrases I use here:
->
-> - "_Recommended solution_" means a solution provided by the platform itself.
-> - "_Community solution_" means a solution provided by the community.
-
 ## Pre-requisites
 
 This project uses [UV](https://docs.astral.sh/uv/) to manage the Python dependencies and [Docker](https://www.docker.com/) to spin up the databases.
@@ -71,6 +64,7 @@ The platforms I've reviewed so far are listed below by their relative difficulty
 
 ### 🟠 Medium
 
+- [NamasteSQL](https://www.namastesql.com/coding-problems) ([review](src/reviews.md#namastesql))
 - [DataLemur](https://datalemur.com/) ([review](src/reviews.md#datalemur))
 - [LeetCode](https://leetcode.com/problemset/database/) ([review](src/reviews.md#leetcode))
 - [HackerRank](https://www.hackerrank.com/domains/sql) ([review](src/reviews.md#hackerrank))
