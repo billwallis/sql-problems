@@ -133,7 +133,35 @@ It includes an extremely thorough walkthrough, perfect for beginners.
 
 ### Cons ❌
 
-Not really a "con", but it's clearly just for beginners.
+Not really a "con", but it's clearly just for beginners (you don't need any advanced SQL).
+
+---
+
+## SQLNoir
+
+> [!NOTE]
+>
+> The problem is available at:
+>
+> - https://www.sqlnoir.com/
+>
+> The platform uses SQLite.
+>
+> The site is a set of "who dunnit?" investigations.
+
+### Pros ✔️
+
+Asking an open-ended question gets you thinking analytically and is different to solving the "usual" kinds of problems.
+
+The platform is simple and easy to use.
+
+It (currently) has 4 investigations which get progressively more difficult.
+
+The site has some handy tabs, and good documentation for the data model (table schemas and an interactive diagram).
+
+### Cons ❌
+
+Not really a "con", but it's clearly just for beginners (you don't need any advanced SQL).
 
 ---
 
