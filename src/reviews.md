@@ -2,6 +2,13 @@
 
 Reviews of the SQL problem platforms are below: these are just my opinions, and you may have a different experience.
 
+> [!NOTE]
+>
+> Some notes on terms/phrases I use here:
+>
+> - "_Recommended solution_" means a solution provided by the platform itself.
+> - "_Community solution_" means a solution provided by the community.
+
 ---
 
 ## Analyst Builder
@@ -14,7 +21,7 @@ Reviews of the SQL problem platforms are below: these are just my opinions, and 
 >
 > The platform uses a mix of databases and languages.
 >
-> There are only 3 free hard problems, and 0 free very hard problems.
+> There are only 3 free hard problems, and 0 free "very hard" problems.
 
 ### Pros ✔️
 
@@ -127,6 +134,43 @@ It includes an extremely thorough walkthrough, perfect for beginners.
 ### Cons ❌
 
 Not really a "con", but it's clearly just for beginners.
+
+---
+
+## NamasteSQL
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://www.namastesql.com/coding-problems
+>
+> The platform uses a mix of databases and languages.
+>
+> There are only 3 free hard problems, and 0 free "extreme hard" problems.
+
+### Pros ✔️
+
+The platform mostly looks and feels nice.
+
+The problem statements have expected results.
+
+There are recommended solutions for each database, and some have a video explanation too!
+
+### Cons ❌
+
+There are some GUI bugs, odd GUI frame cropping, and a schema mismatch in the [user-session-activity.sql](/src/namastesql/user-session-activity.sql) question.
+
+The questions get you to think outside the box a bit (if you've not solved problems like these before), but they're not that hard; hopefully the "extreme hard" problems are actually hard, but I can't say for sure.
+
+These questions are good for someone who's just starting out with SQL, but not for someone who's been working with SQL for a while.
+
+I'm not a fan of the recommended solutions for the questions I attempted (my _opinions_ below):
+
+- Most CTEs aren't given good names (just `cte1`, `cte2`)
+- Some solutions calculate columns that aren't event used, which is confusing
+- Some calculations/logic is overcomplicated -- for example, `cast(EXTRACT(EPOCH FROM <timestamp>) / 60 as int)` in [user-session-activity.sql](/src/namastesql/user-session-activity.sql) can be replaced with the much simpler `extract(minute from <timestamp>))`
+- The CTE's `GROUP BY` in [project-budget.sql](/src/namastesql/project-budget.sql) implies an incorrect grain: it should only group by the project ID, and handle title and budget columns some other way
 
 ---
 
