@@ -346,6 +346,38 @@ Would have been awesome to have a leaderboard 😛
 
 ---
 
+## Noah's Rug (Hanukkah of Data)
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://hanukkah.bluebird.sh/5784/
+>
+> The site only includes the data and questions, but doesn't provide a live query editor.
+
+### Pros ✔️
+
+This is probably my favourite "SQL sleuth" problem set!
+
+The data is appropriately complex -- only 4 tables, but some of the tables are fairly large (for exercises like this).
+
+The data is provided in multiple formats (CSV, JSONL, SQLite).
+
+After completing the questions with the "normal" dataset, you get to try a speed-run with a new dataset (same schema, different rows).
+
+The problems are easy enough to understand, but open-ended enough that you have to do some thinking and experimenting of your own.
+
+The art in the site is very nice.
+
+I'm categorising this as "hard" because of how open-ended it is (even if the solutions don't require _that_ advanced SQL).
+
+### Cons ❌
+
+There are no provided solutions or hints.
+
+---
+
 ## AdvancedSQLPuzzles
 
 > [!NOTE]
