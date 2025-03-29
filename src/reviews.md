@@ -380,6 +380,46 @@ Would have been awesome to have a leaderboard 😛
 
 ---
 
+## 8 Week SQL Challenge (Data with Danny)
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://8weeksqlchallenge.com/
+>
+> The platform has 8 "case studies", each with its own dataset and context.
+>
+> There is no live query editor, but each case study has a link to a [DB Fiddle](https://www.db-fiddle.com/) page with the (PostgreSQL) DDL.
+>
+> Although the questions are based on PostgreSQL, I'll solve them with DuckDB.
+
+### Pros ✔️
+
+It's nice answering several questions per dataset, as you get more familiarity/confidence with the data with each question.
+
+There is a good variety of data between the datasets and, for the most part, the data/questions are similar like "real life" data/questions.
+
+There is a good variety in question difficulty and the questions often build on top of previous ones.
+
+There aren't just `SELECT` questions: there are also DML questions and "business" tasks, like creating a presentation slide.
+
+A couple of questions require some intermediate SQL.
+
+This is good for anyone that has done the SQL basics, and wants to try something more comprehensive.
+
+### Cons ❌
+
+Gotta pay for solutions, and you can't check your answers 😔
+
+A fair few questions are ambiguous and/or have unclear requirements.
+
+Pretty much all case studies could do with some refinement (clarity, typos, etc).
+
+Each case study could have had some more difficult questions that _really_ stretched people's skills.
+
+---
+
 ## Noah's Rug (Hanukkah of Data)
 
 > [!NOTE]

@@ -72,6 +72,7 @@ The platforms I've reviewed so far are listed below by their relative difficulty
 - [HackerRank](https://www.hackerrank.com/domains/sql) ([review](src/reviews.md#hackerrank))
 - [DataExpert.io](https://dataexpert.io/questions) ([review](src/reviews.md#dataexpertio))
 - [Advent of SQL](https://adventofsql.com/) ([review](src/reviews.md#advent-of-sql))
+- [8 Week SQL Challenge (Data with Danny)](https://8weeksqlchallenge.com/) ([review](src/reviews.md#8-week-sql-challenge-data-with-danny))
 
 ### 🔴 Hard
 
