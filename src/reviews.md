@@ -39,9 +39,43 @@ For the most part, the recommended solutions are good.
 
 ### Cons ❌
 
-The "hard" problems are _waaay_ easier than the DataLemur ones; they're more like "medium" DataLemur ones.
+The "hard" problems are _very_ easy. Hopefully the "very hard" problems are actually hard, but I can't say for sure.
 
-Hopefully the "very hard" problems are actually hard, but I can't say for sure.
+These questions are good for someone who's just starting out with SQL, but not for someone who's been working with SQL for a while.
+
+---
+
+## SQL Premier League
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://sqlpremierleague.com/challenges/
+>
+> The platform uses PostgreSQL only.
+>
+> There are _loads_ of problems, and a live query editor.
+>
+> I only attempted a few hard questions, but they were too easy for me to want to do any more.
+
+### Pros ✔️
+
+There are _loads_ of questions, across a few different sports -- great for anyone with an interest in sports!
+
+Each question has a submission history, discussions tab, and hints.
+
+Each question has the required tables, and the first three rows from each table.
+
+There's a "Report and Issue" button on the questions, which is handy for submitting bug reports.
+
+There is a leaderboard and a nice user profile page.
+
+### Cons ❌
+
+The platform doesn't seem to support CTEs, even though they're valid PostgreSQL syntax.
+
+The "hard" problems are very easy.
 
 These questions are good for someone who's just starting out with SQL, but not for someone who's been working with SQL for a while.
 
