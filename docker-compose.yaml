@@ -59,9 +59,9 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
 
-  strata-scratch:
-    image: postgres:16.7
-    container_name: StrataScratch
+  sql-premier-league:
+    image: postgres:16.8
+    container_name: SQLPremierLeague
     ports: ["5435:5432"]
     profiles: ["skip"]
     environment:
@@ -78,3 +78,12 @@ services:
       ORACLE_SID: DEFAULT
       # username is `SYSTEM`
       ORACLE_PWD: oracle
+
+  strata-scratch:
+    image: postgres:16.7
+    container_name: StrataScratch
+    ports: ["5436:5432"]
+    profiles: ["skip"]
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
