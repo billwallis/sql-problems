@@ -175,7 +175,7 @@ Not really a "con", but it's clearly just for beginners (you don't need any adva
 
 > [!NOTE]
 >
-> The problem is available at:
+> The problems are available at:
 >
 > - https://www.sqlnoir.com/
 >
@@ -196,6 +196,48 @@ The site has some handy tabs, and good documentation for the data model (table s
 ### Cons ❌
 
 Not really a "con", but it's clearly just for beginners (you don't need any advanced SQL).
+
+---
+
+## Zachary Thomas SQL Questions
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://quip.com/2gwZArKuWk7W
+>
+> The site only includes the questions and some _very_ limited mock data, but doesn't provide a live query editor.
+>
+> The solutions aim to be independent of any specific SQL dialect, and I've solved them with DuckDB.
+
+### Pros ✔️
+
+The site is easy to use and has a nice table of contents on the side.
+
+The author has included multiple solutions, where appropriate.
+
+### Cons ❌
+
+Where to begin...
+
+Despite the intention to be independent of any specific SQL dialect, the solutions to the following questions are incorrect and/or have syntax errors:
+
+- [other-practice-problems/01-histograms.sql](zachary-thomas-sql-questions/other-practice-problems/01-histograms.sql)
+- [self-join-practice-problems/03-retained-users-per-month.sql](zachary-thomas-sql-questions/self-join-practice-problems/03-retained-users-per-month.sql) parts 2 and 3
+- [self-join-practice-problems/04-cumulative-sums.sql](zachary-thomas-sql-questions/self-join-practice-problems/04-cumulative-sums.sql)
+
+Several of the questions use poor and/or inconsistent object names -- for example, "table" is an awful table name, and "from", "to", and "timestamp" are poor column names.
+
+The "window function" questions and some of the "self join" problems are _extremely_ easy, so not appropriate for a "best medium-hard SQL questions" collection!
+
+Additionally, of the 6 "self join" questions, 3 are objectively better solved with window functions.
+
+The site is easy to use, but the solutions come immediately after the (small!) problem statement, so it's easy to spoil a question unless you scroll slowly.
+
+The mock data is extremely limited.
+
+This **is not** a great set of "medium-hard" SQL questions; this is medium _at best_, and anyone who has worked with SQL for a while should fly through most of these.
 
 ---
 
