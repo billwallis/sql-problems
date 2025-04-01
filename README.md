@@ -66,6 +66,7 @@ The platforms I've reviewed so far are listed below by their relative difficulty
 
 ### 🟠 Medium
 
+- [Zachary Thomas SQL Questions](https://quip.com/2gwZArKuWk7W) ([review](src/reviews.md#zachary-thomas-sql-questions))
 - [NamasteSQL](https://www.namastesql.com/coding-problems) ([review](src/reviews.md#namastesql))
 - [DataLemur](https://datalemur.com/) ([review](src/reviews.md#datalemur))
 - [LeetCode](https://leetcode.com/problemset/database/) ([review](src/reviews.md#leetcode))
