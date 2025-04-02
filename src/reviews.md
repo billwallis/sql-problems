@@ -397,6 +397,57 @@ I'm not sure about the premium hard questions, but based on the free ones, the p
 
 ---
 
+## SQL Squid Game (DataLemur Game)
+
+> [!NOTE]
+>
+> The game is available at:
+>
+> - https://datalemur.com/sql-game
+>
+> The platform uses PostgreSQL only (version 16.4 at the time of writing).
+>
+> There are 9 levels to the game.
+
+### Pros ✔️
+
+It has a good theme: lots of people know Squid Game.
+
+Each level has multiple SQL editors, so you can keep several separate SQL snippets and result sets while you're working on the solution.
+
+Some of the questions are different enough to "normal" questions that you need to think carefully about how to solve them.
+
+Each question has a nice schema diagram to accompany the problem statement.
+
+This is a fairly good game to play for anyone that has a solid understanding of the SQL basics.
+
+### Cons ❌
+
+The UI is buggy:
+
+- Result set values are "undefined" when there are multiple columns with same name in result set (which is bad practice, but common)
+- The query boxes return a "query is not defined" error when going back onto old pages
+
+Many of the questions have unclear requirements and either don't explicitly ask for what they want, or don't define certain metrics that are required for the question!
+
+I don't always agree with the solutions -- particularly levels 7, 8, and 9:
+
+- [sql-squid-game/level-07.sql](/src/data-lemur/sql-squid-game/level-07.sql)
+- [sql-squid-game/level-08.sql](/src/data-lemur/sql-squid-game/level-08.sql)
+- [sql-squid-game/level-09.sql](/src/data-lemur/sql-squid-game/level-09.sql)
+
+There are _loads_ of typos/grammar mistakes, and a lot of the problem statement context just feels childish -- for example, level 7:
+
+> Today's task: **INTERNAL AFFAIRS**! You know what they say - a guard out of bed is a guard who might end up... ahem REASSIGNED! And we've had quite a few mysterious reassignments lately, haven't we? Must be something in the water... Alex Jones may be on to something...
+>
+> But anyways, sticking to todays task...
+>
+> DO YOU KNOW WHAT HAPPENS TO GUARDS WHO BREAK PROTOCOL?! Neither do I which is why I need your next analysis on identifying mysterious guard movements and what they've been up to...
+
+Referencing Alex Jones here, and Kamala Harris/Donald Trump/Luigi Mangione in the data, feels unnecessary. Why bring politics into this?
+
+---
+
 ## LeetCode
 
 > [!NOTE]

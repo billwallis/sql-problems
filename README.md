@@ -70,6 +70,7 @@ The platforms I've reviewed so far are listed below by their relative difficulty
 - [Zachary Thomas SQL Questions](https://quip.com/2gwZArKuWk7W) ([review](src/reviews.md#zachary-thomas-sql-questions))
 - [NamasteSQL](https://www.namastesql.com/coding-problems) ([review](src/reviews.md#namastesql))
 - [DataLemur](https://datalemur.com/) ([review](src/reviews.md#datalemur))
+- [SQL Squid Game (DataLemur Game)](https://datalemur.com/sql-game) ([review](src/reviews.md#sql-squid-game-datalemur-game))
 - [LeetCode](https://leetcode.com/problemset/database/) ([review](src/reviews.md#leetcode))
 - [HackerRank](https://www.hackerrank.com/domains/sql) ([review](src/reviews.md#hackerrank))
 - [DataExpert.io](https://dataexpert.io/questions) ([review](src/reviews.md#dataexpertio))
