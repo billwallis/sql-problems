@@ -75,6 +75,7 @@ The platforms I've reviewed so far are listed below by their relative difficulty
 
 ### 🔴 Hard
 
+- [Interview Query](https://www.interviewquery.com/questions?tags=SQL) ([review](src/reviews.md#interview-query))
 - [Noah's Rug (Hanukkah of Data)](https://hanukkah.bluebird.sh/5784/) ([review](src/reviews.md#noahs-rug-hanukkah-of-data))
 - [AdvancedSQLPuzzles](https://advancedsqlpuzzles.com/) ([review](src/reviews.md#advancedsqlpuzzles))
 - [Challenging SQL Problems](https://bilbottom.github.io/sql-learning-materials/challenging-sql-problems/challenging-sql-problems/) ([review](src/reviews.md#challenging-sql-problems))

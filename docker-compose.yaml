@@ -41,10 +41,28 @@ services:
       # username is `SA`
       SA_PASSWORD: Test@123
 
+  interview-query--postgres:
+    image: postgres:14.3
+    container_name: InterviewQuery_PostgreSQL
+    ports: ["5434:5432"]
+    profiles: ["skip"]
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+  interview-query--mysql:
+    image: mysql:8.0.35
+    container_name: InterviewQuery_MySQL
+    ports: ["3306:3306"]
+    profiles: ["skip"]
+    environment:
+      # username is `root`
+      MYSQL_ROOT_PASSWORD: mysql
+
   leetcode:
     image: mysql:8.0.36
     container_name: LeetCode
-    ports: ["3306:3306"]
+    ports: ["3307:3306"]
     profiles: ["skip"]
     environment:
       # username is `root`
@@ -53,7 +71,7 @@ services:
   namastesql:
     image: postgres:14.7
     container_name: NamasteSQL
-    ports: ["5434:5432"]
+    ports: ["5435:5432"]
     profiles: ["skip"]
     environment:
       POSTGRES_USER: postgres
@@ -62,7 +80,7 @@ services:
   sql-premier-league:
     image: postgres:16.8
     container_name: SQLPremierLeague
-    ports: ["5435:5432"]
+    ports: ["5436:5432"]
     profiles: ["skip"]
     environment:
       POSTGRES_USER: postgres
@@ -82,7 +100,7 @@ services:
   strata-scratch:
     image: postgres:16.7
     container_name: StrataScratch
-    ports: ["5436:5432"]
+    ports: ["5437:5432"]
     profiles: ["skip"]
     environment:
       POSTGRES_USER: postgres
