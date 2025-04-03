@@ -608,6 +608,34 @@ Would have been awesome to have a leaderboard 😛
 
 ---
 
+## Claire Carrol's Advanced SQL Challenges
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://github.com/clrcrl/advanced-sql
+>
+> This is a public GitHub repo, which only includes the data and questions.
+>
+> There are 2 questions. Although the questions are (loosely) based on BigQuery, I'll solve them with DuckDB.
+>
+> The site is free.
+
+### Pros ✔️
+
+The problem statements are explained very well: it's clear what the requirements are.
+
+The problems include expected outputs, making it very easy to verify solutions.
+
+The second question, [apportioning payments](/src/claire-carrols-advanced-sql-challenges/apportioning-payments.sql), is particularly good -- it's a real-life problem that you don't often see in problem sites.
+
+### Cons ❌
+
+The first question, [subscription price changes](/src/claire-carrols-advanced-sql-challenges/subscription-price-changes.sql), was a lot easier than I was expecting.
+
+---
+
 ## 8 Week SQL Challenge (Data with Danny)
 
 > [!NOTE]
