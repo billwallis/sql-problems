@@ -714,6 +714,53 @@ Each case study could have had some more difficult questions that _really_ stret
 
 ---
 
+## Interview Query
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://www.interviewquery.com/questions?tags=SQL
+>
+> The platform uses MySQL (8.0.35), PostgreSQL (14.3), and SQL Server (2019) for SQL.
+>
+> The site has plenty of free hard questions, but has a limit on how many questions you can answer.
+
+### Pros ✔️
+
+The platform looks nice, is easy to use, and has a fast response time.
+
+The problem statements have multiple test cases to verify that the query works in multiple scenarios.
+
+The site has plenty of free hard questions (at least, questions labelled "hard").
+
+There is a comments section for discussions with other users, and the recommended solutions generally have a thorough explanation.
+
+The site also has other kinds of questions -- like providing a dataset with some context, and asking you to think about what kind of metrics might be good to define for the dataset.
+
+There is good gamification on the site (leaderboards, badges, daily streaks).
+
+I haven't used them, but lots of the premium features look pretty good.
+
+There are some genuinely difficult problems on this site, so this is (largely) a good site to prepare for senior roles.
+
+### Cons ❌
+
+You can only do 3 questions for free, and several elements are hidden behind a paywall (which is fair for a free platform).
+
+A significant proportion of the (hard) questions need some refinement:
+
+- A couple of questions have problem statements that don't align with the expected result sets ([notification-type-conversion](/src/interview-query/notification-type-conversion.sql) and [trial-test-analysis](/src/interview-query/trial-test-analysis.sql))
+- Lots of problem statements are not clear enough, with either ambiguous logic or undefined metrics (or both!)
+- Lots of problem statements ask for the solution columns to be in one order, but the expected result set has a different order
+- Other miscellaneous nitpicks that I won't cover here (see the solution SQL files for details)
+
+Nitpick, but I don't like that a lot of the expected result sets with aggregates have the aggregated values _before_ the columns that are being grouped by 😬
+
+Lots of the "hard" questions are not that hard -- the authors seem to think that a solution that includes a window function automatically makes it a hard question 🙄
+
+---
+
 ## Noah's Rug (Hanukkah of Data)
 
 > [!NOTE]
