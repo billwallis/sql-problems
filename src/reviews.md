@@ -135,6 +135,42 @@ These questions are good for someone who's just starting out with SQL, but not f
 
 ---
 
+## Learn SQL (SQL Practice)
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://www.sql-practice.com/
+>
+> The platform uses SQLite.
+>
+> The site is free.
+
+### Pros ✔️
+
+Super simple site! Straightforward and easy to use, with no plugs for a paid tier.
+
+Each question has an expected output, and multiple solutions.
+
+Very fast response times for the queries.
+
+The SQL editor is surprisingly good/user-friendly.
+
+Both databases have an ERD, and easy to view table schemas.
+
+It's good answering several questions per dataset, as you get more familiarity with the data with each question.
+
+Great for people newish to SQL.
+
+### Cons ❌
+
+The "hard" questions are pretty easy.
+
+I personally don't like that the keywords automatically capitalise in the editor 🤔
+
+---
+
 ## SQL Premier League
 
 > [!NOTE]

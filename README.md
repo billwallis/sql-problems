@@ -61,6 +61,7 @@ The platforms I've reviewed so far are listed below by their relative difficulty
 - [SQL Murder Mystery](https://mystery.knightlab.com/) ([review](src/reviews.md#sql-murder-mystery))
 - [SQLNoir](https://www.sqlnoir.com/) ([review](src/reviews.md#sqlnoir))
 - [Analyst Builder](https://www.analystbuilder.com/) ([review](src/reviews.md#analyst-builder))
+- [Learn SQL (SQL Practice)](https://www.sql-practice.com/) ([review](src/reviews.md#learn-sql-sql-practice))
 - [SQL Premier League](https://sqlpremierleague.com/challenges/) ([review](src/reviews.md#sql-premier-league))
 - [SQL Short Reads](https://sqlshortreads.com/sql-practice-problems/) ([review](src/reviews.md#sql-short-reads))
 - [StrataScratch](https://platform.stratascratch.com/coding) ([review](src/reviews.md#stratascratch))
