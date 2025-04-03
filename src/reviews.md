@@ -11,6 +11,96 @@ Reviews of the SQL problem platforms are below: these are just my opinions, and 
 
 ---
 
+## SQL Island
+
+> [!NOTE]
+>
+> The problem is available at:
+>
+> - https://sql-island.informatik.uni-kl.de/
+>
+> The platform uses SQLite.
+>
+> The site isn't a set of problems; it's a guided SQL tutorial, so I won't save my SQL.
+>
+> The site is free.
+
+### Pros ✔️
+
+It's a good introduction for SQL and builds up the concepts well.
+
+Lots of the steps are tweaking an existing query, which it very similar to what "doing SQL for real" is like.
+
+It teaches DML as well as `SELECT` statements.
+
+### Cons ❌
+
+I get an "unsecure site" warning when I first access it (Google Chrome).
+
+The tutorial types its own SQL slowly.
+
+Still teaches the non-ANSI join syntax 😭😭😭
+
+---
+
+## SQL Murder Mystery
+
+> [!NOTE]
+>
+> The problem is available at:
+>
+> - https://mystery.knightlab.com/
+>
+> The platform uses SQLite.
+>
+> The site isn't a set of problems; the only question is "who dunnit?"!
+>
+> The site is free.
+
+### Pros ✔️
+
+Asking an open-ended question gets you thinking analytically and is different to solving the "usual" kinds of problems.
+
+The platform is simple and easy to use, with clear instructions.
+
+It includes an extremely thorough walkthrough, perfect for beginners.
+
+### Cons ❌
+
+Not really a "con", but it's clearly just for beginners (you don't need any advanced SQL).
+
+---
+
+## SQLNoir
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://www.sqlnoir.com/
+>
+> The platform uses SQLite.
+>
+> The site is a set of "who dunnit?" investigations.
+>
+> The site is free.
+
+### Pros ✔️
+
+Asking an open-ended question gets you thinking analytically and is different to solving the "usual" kinds of problems.
+
+The platform is simple and easy to use.
+
+It (currently) has 4 investigations which get progressively more difficult.
+
+The site has some handy tabs, and good documentation for the data model (table schemas and an interactive diagram).
+
+### Cons ❌
+
+Not really a "con", but it's clearly just for beginners (you don't need any advanced SQL).
+
+---
+
 ## Analyst Builder
 
 > [!NOTE]
@@ -57,7 +147,9 @@ These questions are good for someone who's just starting out with SQL, but not f
 >
 > There are _loads_ of problems, and a live query editor.
 >
-> I only attempted a few hard questions, but they were too easy for me to want to do any more.
+> I only attempted a few hard questions (while they were free), but they were too easy for me to want to do any more.
+>
+> The hard problems now all require a subscription.
 
 ### Pros ✔️
 
@@ -92,6 +184,8 @@ These questions are good for someone who's just starting out with SQL, but not f
 > These questions are created by [Chris Perry](https://www.linkedin.com/in/chrismperry/).
 >
 > The site only includes the questions (and solutions), but doesn't provide a live query editor -- instead, it points you to [https://livesql.oracle.com/](https://livesql.oracle.com/) which uses Oracle 19c.
+>
+> The site is free.
 
 ### Pros ✔️
 
@@ -126,6 +220,8 @@ I disagree with the solution to [consecutive-top-product-category-performances.s
 > - https://platform.stratascratch.com/coding?difficulties=3&is_freemium=1
 >
 > The platform uses a mix of databases and languages, and has plenty of free "hard" problems.
+>
+> The site has some free questions.
 
 ### Pros ✔️
 
@@ -156,6 +252,8 @@ These questions are good for someone who's just starting out with SQL, but not f
 > The platform uses SQLite, and has 5 problems with a live SQL editor.
 >
 > It also has a "story mode", which I've not attempted.
+>
+> The site is free.
 
 ### Pros ✔️
 
@@ -228,60 +326,6 @@ Nitpicks:
 
 ---
 
-## SQL Murder Mystery
-
-> [!NOTE]
->
-> The problem is available at:
->
-> - https://mystery.knightlab.com/
->
-> The platform uses SQLite.
->
-> The site isn't a set of problems; the only question is "who dunnit?"!
-
-### Pros ✔️
-
-Asking an open-ended question gets you thinking analytically and is different to solving the "usual" kinds of problems.
-
-The platform is simple and easy to use, with clear instructions.
-
-It includes an extremely thorough walkthrough, perfect for beginners.
-
-### Cons ❌
-
-Not really a "con", but it's clearly just for beginners (you don't need any advanced SQL).
-
----
-
-## SQLNoir
-
-> [!NOTE]
->
-> The problems are available at:
->
-> - https://www.sqlnoir.com/
->
-> The platform uses SQLite.
->
-> The site is a set of "who dunnit?" investigations.
-
-### Pros ✔️
-
-Asking an open-ended question gets you thinking analytically and is different to solving the "usual" kinds of problems.
-
-The platform is simple and easy to use.
-
-It (currently) has 4 investigations which get progressively more difficult.
-
-The site has some handy tabs, and good documentation for the data model (table schemas and an interactive diagram).
-
-### Cons ❌
-
-Not really a "con", but it's clearly just for beginners (you don't need any advanced SQL).
-
----
-
 ## Zachary Thomas SQL Questions
 
 > [!NOTE]
@@ -293,6 +337,8 @@ Not really a "con", but it's clearly just for beginners (you don't need any adva
 > The site only includes the questions and some _very_ limited mock data, but doesn't provide a live query editor.
 >
 > The solutions aim to be independent of any specific SQL dialect, and I've solved them with DuckDB.
+>
+> The site is free.
 
 ### Pros ✔️
 
@@ -408,6 +454,8 @@ I'm not sure about the premium hard questions, but based on the free ones, the p
 > The platform uses PostgreSQL only (version 16.4 at the time of writing).
 >
 > There are 9 levels to the game.
+>
+> The site is free.
 
 ### Pros ✔️
 
@@ -489,6 +537,8 @@ Same as DataLemur: these are good for checking that you know what you need to kn
 > - https://www.hackerrank.com/domains/sql
 >
 > The platform uses a mix of databases and languages.
+>
+> The site has some free questions.
 
 ### Pros ✔️
 
@@ -535,6 +585,8 @@ There aren't enough hard questions, so someone prepping for a senior role will r
 > - https://adventofsql.com/
 >
 > Although the questions are based on PostgreSQL, I'll solve them with DuckDB since there is significant overlap between the two (and I prefer DuckDB for stuff like this).
+>
+> The site is free.
 
 ### Pros ✔️
 
@@ -569,6 +621,8 @@ Would have been awesome to have a leaderboard 😛
 > There is no live query editor, but each case study has a link to a [DB Fiddle](https://www.db-fiddle.com/) page with the (PostgreSQL) DDL.
 >
 > Although the questions are based on PostgreSQL, I'll solve them with DuckDB.
+>
+> The site is free, but you need to pay for the solutions.
 
 ### Pros ✔️
 
@@ -605,6 +659,8 @@ Each case study could have had some more difficult questions that _really_ stret
 > - https://hanukkah.bluebird.sh/5784/
 >
 > The site only includes the data and questions, but doesn't provide a live query editor.
+>
+> The site is free.
 
 ### Pros ✔️
 
@@ -640,6 +696,8 @@ There are no provided solutions or hints.
 > The site is a [GitHub](https://github.com/) repo which only includes the questions (and solutions), but doesn't provide a live query editor.
 >
 > The problems are created by [Scott Peters](https://github.com/smpetersgithub).
+>
+> The site is free.
 
 ### Pros ✔️
 
@@ -678,3 +736,5 @@ The problems are written in a PDF.
 > The problems' DDL is written in generic SQL to support multiple databases.
 >
 > I'm not going to add a pros and cons list: I've just included this for completeness.
+>
+> The site is free.
