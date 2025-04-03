@@ -89,6 +89,7 @@ The platforms I've reviewed so far are listed below by their relative difficulty
 
 There were some problem sites that I chose to skip completely:
 
+- [w3resource](https://www.w3resource.com/sql-exercises/): This has an impressive number of free questions (2,605!), but none of them are hard. Good for beginners that want an "endless" list of questions to practice on.
 - [SQL Police Department](https://sqlpd.com/): This uses a point-and-click interface, you don't actually write the SQL yourself. Might be good for complete beginners. Has some free "cases" to solve.
 - [SQL Practice](https://sqlpractice.io/practice-questions): There are no free hard questions.
 - [Interview Master](https://www.interviewmaster.ai/home): Doesn't support password authentication and you can't access questions without an account. Feels like a rip-off of [SQL Practice](https://sqlpractice.io/practice-questions).
@@ -104,3 +105,4 @@ For clarity, I'm only reviewing problem sites and the following are (interactive
 - [Coursera](https://www.coursera.org/search?query=sql)
 - [LearnSQL](https://learnsql.com/)
 - [Mode](https://mode.com/sql-tutorial)
+- [W3Schools](https://www.w3schools.com/sql/)
