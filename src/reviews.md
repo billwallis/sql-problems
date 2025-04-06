@@ -818,7 +818,7 @@ The problems aren't just about writing a `SELECT` statement, but also tests DDL 
 
 There is a lot of repetition in the problems, which is good for reinforcing the patterns and techniques.
 
-Many of these questions _are_ hard, and are good preparation for a senior technical role.
+Many of these questions in part 2, _Permutations, Combinations, Sequences and Random Numbers_, are hard and are good preparation for a senior technical role.
 
 ### Cons ❌
 
