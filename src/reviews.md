@@ -840,7 +840,7 @@ The problems are written in a PDF.
 >
 > The problems are available at:
 >
-> - https://bilbottom.github.io/sql-learning-materials/challenging-sql-problems/challenging-sql-problems/
+> - https://billwallis.github.io/sql-learning-materials/challenging-sql-problems/challenging-sql-problems/
 >
 > The site only includes the questions (and solutions), but doesn't provide a live query editor.
 >

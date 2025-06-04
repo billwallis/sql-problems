@@ -2,8 +2,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Bilbottom/sql-problems)](https://shields.io/badges/git-hub-last-commit)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/Bilbottom/sql-problems/main.svg)](https://results.pre-commit.ci/latest/github/Bilbottom/sql-problems/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/billwallis/sql-problems)](https://shields.io/badges/git-hub-last-commit)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/billwallis/sql-problems/main.svg)](https://results.pre-commit.ci/latest/github/billwallis/sql-problems/main)
 
 </div>
 
@@ -80,7 +80,7 @@ The platforms I've reviewed so far are listed below by their relative difficulty
 - [Interview Query](https://www.interviewquery.com/questions?tags=SQL) ⭐💰 ([review](src/reviews.md#interview-query))
 - [Noah's Rug (Hanukkah of Data)](https://hanukkah.bluebird.sh/5784/) ⭐🆓 ([review](src/reviews.md#noahs-rug-hanukkah-of-data))
 - [AdvancedSQLPuzzles](https://advancedsqlpuzzles.com/) ⭐🆓 ([review](src/reviews.md#advancedsqlpuzzles))
-- [Challenging SQL Problems](https://bilbottom.github.io/sql-learning-materials/challenging-sql-problems/challenging-sql-problems/) 🆓 ([review](src/reviews.md#challenging-sql-problems))
+- [Challenging SQL Problems](https://billwallis.github.io/sql-learning-materials/challenging-sql-problems/challenging-sql-problems/) 🆓 ([review](src/reviews.md#challenging-sql-problems))
 
 ### ⭕ Skipped
 
