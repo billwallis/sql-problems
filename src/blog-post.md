@@ -43,7 +43,6 @@ There were some sites that I didn't attempt at all:
 - [Code360](https://www.naukri.com/code360/problem-lists/top-100-sql-problems): Email registration was broken. The "hard" and "ninja" questions all look fairly easy.
 - [SQL Police Department](https://sqlpd.com/): This uses a point-and-click interface, you don't actually write the SQL yourself. Might be good for complete beginners. Has some free "cases" to solve.
 - [SQL Practice](https://sqlpractice.io/practice-questions): No free hard questions (yet). Feels heavily AI-generated, so concerned about the quality of the data/questions/platform.
-- [Interview Master](https://www.interviewmaster.ai/home): Doesn't support password authentication and you can't access questions without an account. Feels like a rip-off of [SQL Practice](https://sqlpractice.io/practice-questions) with the same concerns.
 
 ### Which ones should you try?
 
