@@ -32,7 +32,7 @@ repos:
         name: Validate Python
 
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.6.12
+    rev: 0.7.19
     hooks:
       - id: uv-lock
         name: Check that the lock file is up-to-date
