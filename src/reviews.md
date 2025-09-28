@@ -237,9 +237,7 @@ The [member-type-upgrade.sql](/src/sql-short-reads/member-type-upgrade.sql) ques
 
 The [livesql.oracle.com](https://livesql.oracle.com/) site requires you to sign up to use it, which is a bit annoying -- in particular because it asks for more personal information than I'd like to give (phone number, company name, etc.).
 
-Also, Oracle 🤮
-
-To reiterate, Oracle 🤮
+The site uses Oracle, which is not a database that I like.
 
 The recommended solutions seem overcomplicated in a few cases and, like Analyst Builder, the "hard" questions are mostly not that hard.
 
