@@ -610,7 +610,7 @@ There aren't enough hard questions, so someone prepping for a senior role will r
 
 ---
 
-## Advent of SQL
+## Advent of SQL 2024
 
 > [!NOTE]
 >
@@ -639,6 +639,61 @@ The difficulty varies _wildly_, and some of the challenges were way too easy.
 Since it was the first year, there were a fair few bugs (as expected) and the samples didn't always correctly reflect the "real" data.
 
 Would have been awesome to have a leaderboard 😛
+
+---
+
+## Advent of SQL 2025
+
+> [!NOTE]
+>
+> The problems are available at:
+>
+> - https://databaseschool.com/series/advent-of-sql
+>
+> Although the questions are based on PostgreSQL, I'll solve them with DuckDB since there is significant overlap between the two (and I prefer DuckDB for stuff like this).
+>
+> The site is free.
+>
+> This differs from Advent of Code 2024 because this 2025 series was put together by a new author.
+
+### Pros ✔️
+
+High-quality videos! Great sound and video quality, nice editing, and super easy to watch and follow.
+
+The site includes a playground with a recent PostgreSQL version (17.7).
+
+Each video includes a corresponding transcript... but the author is very wordy, so it's a lot to read.
+
+Some nice demonstrations of different SQL features, including:
+
+- Crunching nested data (JSON and XML)
+- Data-modifying CTEs
+- Vectors/full text search
+- Recursive CTEs
+
+### Cons ❌
+
+The main summary is that these are just Christmas-themed problems -- it doesn't "feel like" Advent of Code to me 😢
+
+This is because:
+
+- The format is totally different: every day is a video, with no way to "submit" a solution
+- No samples, and no example walkthrough before the "main" challenge
+- The early challenges are _super_ simple, way too easy compared to the initial AoC problem difficulty
+- No community (that I'm aware of), which was a big part of both [Advent of Code](https://www.reddit.com/r/adventofcode/) and the [2024 Advent of SQL](https://www.reddit.com/r/adventofsql/)
+
+It feels like the author just co-opted the "Advent of Code" brand to push out content, without being true to AoC 🤷‍♂️
+
+Aside from not "feeling like" Advent of Code, there are also elements of the problems and solutions that I'm not comfortable with:
+
+- `SERIAL` is used in the DDL, even though [the PostgreSQL devs themselves recommend not to use it](https://wiki.postgresql.org/wiki/Don't_Do_This#Don't_use_serial)
+- The author kind of recommends using ordinals in `GROUP BY`/`ORDER BY`. Big no-no 😡
+- The author uses `MM-DD-YYYY` date formats in string literals 🤮
+- The author often doesn't add table qualifiers to their columns in joins
+
+Some problem-specific notes have been left as comments in the solution files.
+
+Lastly, and totally subjective: I don't really vibe with the author's communication style. I would not watch any of their other videos 🤷‍♂️
 
 ---
 
