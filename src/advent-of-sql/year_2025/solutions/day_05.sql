@@ -7,6 +7,14 @@ from listening_logs;
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 
+/*
+    The author doesn't handle `total_listens` duplicates 😭
+
+    Not handling the duplicates appropriately is not a trivial thing to
+    omit: in the real world, I encounter bugs often as a result of people
+    not handling these correctly.
+*/
+
 /* Solution */
 select
     user_name,

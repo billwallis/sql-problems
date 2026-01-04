@@ -10,7 +10,13 @@ from misdelivered_presents;
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 
-/* DuckDB doesn't have data-modifying CTEs, so doing this the "old-fashioned" way */
+/*
+    DuckDB doesn't have data-modifying CTEs, so doing this the
+    "old-fashioned" way 😋
+
+    As for the author's solution, they should use some transaction control.
+    That's more important than niche data-modifying CTEs in my opinion.
+*/
 
 /* Solution */
 start transaction;

@@ -10,6 +10,11 @@ from deliveries_assigned;
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 
+/*
+    I think the data in the video is different from the download, my output
+    isn't matching 🤔
+*/
+
 /* Solution */
 select
     gs.gift_date::date as unassigned_date,

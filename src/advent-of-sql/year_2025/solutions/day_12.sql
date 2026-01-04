@@ -7,6 +7,15 @@ from archive_records;
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 
+/*
+    The requirement "most relevant archived records" is ambiguous, what does
+    it mean to be more relevant?!
+
+    Also, the author's `limit 5` picks some rows non-deterministically since
+    many records have the same search rank. They should handle same-score
+    results deterministically.
+*/
+
 /* Solution (naive) */
 from (
     select

@@ -10,6 +10,12 @@ from last_minute_signups;
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 
+/*
+    Hmm, the author uses a flimsy deduplication method in their solution.
+    Just throwing them into a `UNION` assumes that there are no repeats in
+    the PK columns, which may not be the case.
+*/
+
 /* Solution */
 with
 
