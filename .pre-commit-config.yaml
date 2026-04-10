@@ -13,41 +13,30 @@ repos:
     rev: v6.0.0
     hooks:
       - id: no-commit-to-branch
-        name: Don't allow commits to the main branch
         args: ["--branch", "main"]
       - id: trailing-whitespace
-        name: Remove trailing whitespace
       - id: end-of-file-fixer
-        name: Ensure files end with a newline character
       - id: mixed-line-ending
-        name: Align mixed line ending
       - id: check-added-large-files
-        name: Check for large files
       - id: check-json
-        name: Check JSON files are valid and parseable
       - id: check-yaml
-        name: Check YAML files are valid and parseable
       - id: check-toml
-        name: Check TOML files are valid and parseable
       - id: check-ast
-        name: Validate Python
       - id: detect-private-key
-        name: Check for the existence of private keys
 
   - repo: https://github.com/pre-commit-ci/pre-commit-ci-config
     rev: v1.6.1
     hooks:
       - id: check-pre-commit-ci-config
-        name: Validate pre-commit CI config
 
   - repo: https://github.com/astral-sh/uv-pre-commit
     rev: 0.11.3
     hooks:
       - id: uv-lock
-        name: Check that the lock file is up-to-date
 
   - repo: https://github.com/billwallis/bills-hooks
     rev: v0.0.13
     hooks:
+      - id: banned-python-code
+      - id: check-no-commit-comment
       - id: tidy-gitkeep
-        name: Remove redundant .gitkeep files
