@@ -1,5 +1,4 @@
 # yaml-language-server: $schema=https://json.schemastore.org/pyproject.json
-
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
@@ -10,10 +9,11 @@ version = "0.0.0"
 description = "Solutions to SQL problems."
 authors = [{name = "billwallis"}]
 readme = "README.md"
+license-files = ["LICENSE"]
 requires-python = ">=3.13"
 dependencies = []
 
 [dependency-groups]
 dev = [
-    "pre-commit>=4.5.1",
+    "pre-commit>=4.6.0",
 ]
