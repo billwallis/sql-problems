@@ -386,9 +386,9 @@ Where to begin...
 
 Despite the intention to be independent of any specific SQL dialect, the solutions to the following questions are incorrect and/or have syntax errors:
 
-- [other-practice-problems/01-histograms.sql](zachary-thomas-sql-questions/other-practice-problems/01-histograms.sql)
-- [self-join-practice-problems/03-retained-users-per-month.sql](zachary-thomas-sql-questions/self-join-practice-problems/03-retained-users-per-month.sql) parts 2 and 3
-- [self-join-practice-problems/04-cumulative-sums.sql](zachary-thomas-sql-questions/self-join-practice-problems/04-cumulative-sums.sql)
+- [other-practice-problems/01-histograms.sql](../src/zachary-thomas-sql-questions/other-practice-problems/01-histograms.sql)
+- [self-join-practice-problems/03-retained-users-per-month.sql](../src/zachary-thomas-sql-questions/self-join-practice-problems/03-retained-users-per-month.sql) parts 2 and 3
+- [self-join-practice-problems/04-cumulative-sums.sql](../src/zachary-thomas-sql-questions/self-join-practice-problems/04-cumulative-sums.sql)
 
 Several of the questions use poor and/or inconsistent object names -- for example, "table" is an awful table name, and "from", "to", and "timestamp" are poor column names.
 
